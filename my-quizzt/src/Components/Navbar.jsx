@@ -43,10 +43,10 @@ const Navbar = () => {
           <NavLink to="/" className="block text-gray-600 hover:text-gray-900">
             Home
           </NavLink>
-          <NavLink to="/quiz" className="block text-gray-600 hover:text-gray-900">
+          <NavLink to="/QuizPage" className="block text-gray-600 hover:text-gray-900">
             Quiz
           </NavLink>
-          <NavLink to="/history" className="block text-gray-600 hover:text-gray-900">
+          <NavLink to="/History" className="block text-gray-600 hover:text-gray-900">
             History
           </NavLink>
         </div>
