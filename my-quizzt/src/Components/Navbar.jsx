@@ -22,7 +22,7 @@ const Navbar = () => {
           <NavLink to="/QuizPage" className="text-gray-600 hover:text-gray-900">
             Quiz
           </NavLink>
-          <NavLink to="/history" className="text-gray-600 hover:text-gray-900">
+          <NavLink to="/History" className="text-gray-600 hover:text-gray-900">
             History
           </NavLink>
         </div>
