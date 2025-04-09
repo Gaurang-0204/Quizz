@@ -31,18 +31,7 @@
         src: /var/lib/jenkins/workspace/Test/build_artifacts.tar.gz
         dest: "{{ dest_dir }}"
         remote_src: no
-        creates: "{{ dest_dir }}/my-quizzt/dist"
       tags: unpack
-
-    - name: Move contents to NGINX root directory
-      command: mv {{ dest_dir }}/my-quizzt/dist/* {{ dest_dir }}/
-      args:
-        removes: "{{ dest_dir }}/my-quizzt/dist"
-
-    - name: Remove leftover build folder
-      file:
-        path: "{{ dest_dir }}/my-quizzt"
-        state: absent
 
     - name: Copy NGINX configuration
       template:
